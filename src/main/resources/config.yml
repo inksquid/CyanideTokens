@@ -1,0 +1,60 @@
+# reloadMessage: The message players see after reloading the plugin
+# noPermMessage: The message players see after trying to reload the plugin without permission
+# giveHelpMessage: The message players see after trying to give a player tokens unsuccessfully
+# takeHelpMessage: The message players see after trying to take tokens from a player unsuccessfully
+# sendHelpMessage: The message players see after trying to send tokens to a player unsuccessfully
+# giveMessage: The message players see after giving a player tokens
+# takeMessage: The message players see after taking tokens from a player
+# sendMessage: The message players see after sending tokens to a player
+# receiveMessage: The message players see after receiving a token
+# notEnoughMessage: The message players see after trying to buy an item without enough tokens
+# boughtMessage: The message players see after buying an item
+# mineMessage: The message players see after mining out a token
+# cantSendMessage: The message players see after they try to send a token amount less than one
+# notOnlineMessage: The message players see after they try to send a token to an offline player
+# consoleMessage: The message sent to console after trying to use a player-only command
+# helpMessage: The messages players see after using the base command
+# defaultShop: The default shop name
+# blockBreaks: The amount of blocks broken to get a token
+# mongodb: MongoDB database details
+
+general:
+  reloadMessage: '&eSuccessfully reloaded CyanideTokens!'
+  noPermMessage: '&4You do not have access to that command.'
+  giveHelpMessage: '&eUsage: &6/tokens give [player] [amount]&e.'
+  takeHelpMessage: '&eUsage: &6/tokens take [player] [amount]&e.'
+  sendHelpMessage: '&eUsage: &6/tokens send [player] [amount]&e.'
+  withdrawHelpMessage: '&eUsage: &6/tokens withdraw [amount]&e.'
+  giveMessage: '&eYou gave &6<amount> &etokens to &6<player>&e! He has &6<number> &etokens now.'
+  takeMessage: '&eYou took &6<amount> &etokens from &6<player>&e! He has &6<number> &etokens now.'
+  sendMessage: '&eYou sent &6<amount> &etokens to &6<player>&e! You now have &6<number> &etokens left.'
+  receiveMessage: '&eYou received &6<amount> &etokens from &6<player>&e! You now have &6<number> &etokens.'
+  notEnoughMessage: '&eYou need &6<required> &emore tokens to buy this item!'
+  notEnoughInventorySpace: '&eYou do not have enough room in your inventory!'
+  boughtMessage: '&eYou bought that item for &6<cost> &etokens. You now have &6<remaining> &etokens remaining.'
+  mineMessage: '&eYou found a token while mining. You have &6<amount> &etokens now.'
+  cantSendMessage: '&eSorry, but you need to send at least one token.'
+  notOnlineMessage: '&eSorry, but &6<player> &eis not online!'
+  consoleMessage: 'Sorry, but you cannot execute this command!'
+  tokenItem: 175
+  tokenName: '&b&lCyanideTokens &f&lToken'
+  tokenLore:
+  - '&6&lRight click to deposit to account'
+  helpMessage:
+  - '&6&lTOKENS&f | &7/tokens'
+  - '&6Oo-----------------------oOo-----------------------oO'
+  - '&2You have &a<tokens> &2tokens!'
+  - '&2/tokens shop &f- &aBuy items'
+  - '&2/tokens send [player] [amount] &f- &aSend tokens to a player'
+  - '&6Oo-----&cADMINISTRATIVE&6-----oOo--------&cCOMMANDS&6-------oO'
+  - '&2/tokens reload &f- &aReload tokens'
+  - '&2/tokens give [player] [amount] &f- &aGive tokens'
+  - '&2/tokens take [player] [amount] &f- &aTake tokens'
+  - '&6Oo-----------------------oOo-----------------------oO'
+settings:
+  defaultShop: shop
+  blockBreaks: 100
+  mongodb:
+    ip: localhost
+    port: 27017
+    database: opprison

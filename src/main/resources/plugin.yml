@@ -1,0 +1,38 @@
+name: CyanideTokens
+version: ${project.version}
+main: org.cyanidemc.cyanidetokens.CyanideTokens
+commands:
+  tokens:
+    description: Buy things with your tokens!
+    aliases: [cyanidetokens, token]
+    permission: cyanidetokens.help
+    usage: "Usage: /tokens [shop/send/reload/give/take]"
+permissions:
+  cyanidetokens.*:
+    description: Gives access to all CycloneTokens permissions.
+    default: op
+    children:
+      cyanidetokens.help: true
+      cyanidetokens.reload: true
+      cyanidetokens.give: true
+      cyanidetokens.take: true
+      cyanidetokens.send: true
+      cyanidetokens.shop: true
+  cyanidetokens.help:
+    description: Allows you to get command help.
+    default: true
+  cyanidetokens.reload:
+    description: Allows you to reload the plugin
+    default: op
+  cyanidetokens.give:
+    description: Allows you to give tokens
+    default: op
+  cyanidetokens.take:
+    description: Allows you to take tokens
+    default: op
+  cyanidetokens.send:
+    description: Allows you to send tokens to another player
+    default: true
+  cyanidetokens.shop:
+    description: Allows you to use the shop
+    default: true
